@@ -85,12 +85,12 @@ function fetchBookmarks() {
     bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
   } else {
     const id = "MDN Docs";
-    bookmarks[id] = [
-      {
-        name: "MDN Docs",
-        url: "https://developer.mozilla.org/en-US/docs/Learn",
-      },
-    ];
+//     bookmarks[id] = [
+//       {
+//         name: "google.com",
+//         url: "google.com",
+//       },
+//     ];
     localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
   }
   buildBookmarks();
